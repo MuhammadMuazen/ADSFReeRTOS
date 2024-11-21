@@ -1,0 +1,676 @@
+!SESSION 2024-11-21 09:08:29.523 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-11-21 09:08:48.021
+!MESSAGE Enablement expression is missing for descriptor type com.espressif.idf.debug.gdbjtag.openocd.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-11-21 09:08:48.024
+!MESSAGE Enablement expression is missing for config provider for com.espressif.idf.debug.gdbjtag.openocd.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-11-21 09:08:48.025
+!MESSAGE Enablement expression is missing for config provider for com.espressif.idf.launch.serial.core.idf.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-11-21 09:08:48.025
+!MESSAGE Enablement expression is missing for descriptor type com.espressif.idf.launch.serial.core.idf.descriptorType
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-11-21 09:08:48.033
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\muhammad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:49.061
+!MESSAGE Initializing toolchain...
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:49.061
+!MESSAGE idf_tools.py path: null/tools/idf_tools.py
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:49.062
+!MESSAGE idf_tools.py path doesn't exist
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:49.062
+!MESSAGE [C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools]
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:49.695
+!MESSAGE Eclipse Install location::file:/C:/Espressif/tools/espressif-ide/3.1.0/
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:49.742
+!MESSAGE Executing C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe C:\Espressif\frameworks\esp-idf-v5.3.1\tools\idf_tools.py export --format=key-value
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:52.146
+!MESSAGE Key: OPENOCD_SCRIPTS Value: C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\share\openocd\scripts
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:52.147
+!MESSAGE Key: IDF_CCACHE_ENABLE Value: 1
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:52.147
+!MESSAGE Key: ESP_ROM_ELF_DIR Value: C:\Espressif\tools\esp-rom-elfs\20240305\
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:52.147
+!MESSAGE Key: IDF_PYTHON_ENV_PATH Value: C:\Espressif\python_env\idf5.3_py3.11_env
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:52.147
+!MESSAGE Key: ESP_IDF_VERSION Value: 5.3
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:52.147
+!MESSAGE Key: PATH Value: C:\Espressif\tools\xtensa-esp-elf-gdb\14.2_20240403\xtensa-esp-elf-gdb\bin;C:\Espressif\tools\riscv32-esp-elf-gdb\14.2_20240403\riscv32-esp-elf-gdb\bin;C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin;C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin;C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin;C:\Espressif\tools\esp32ulp-elf\2.38_20240113\esp32ulp-elf\bin;C:\Espressif\tools\cmake\3.24.0\bin;C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\bin;C:\Espressif\tools\ninja\1.11.1\;C:\Espressif\tools\idf-exe\1.0.3\;C:\Espressif\tools\ccache\4.8\ccache-4.8-windows-x86_64;C:\Espressif\tools\dfu-util\0.11\dfu-util-0.11-win64;C:\Espressif\python_env\idf5.3_py3.11_env\Scripts;C:\Espressif\frameworks\esp-idf-v5.3.1\tools;%PATH%
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:52.147
+!MESSAGE Key: IDF_DEACTIVATE_FILE_PATH Value: C:\Users\muhammad\AppData\Local\Temp\tmpnhw05dcridf_54660
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:52.148
+!MESSAGE Executing C:\Espressif\python_env\idf5.3_py3.11_env/Scripts/python.exe C:\Espressif\frameworks\esp-idf-v5.3.1\tools\idf.py --version
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:52.148
+!MESSAGE {USERDOMAIN_ROAMINGPROFILE=AsusZeph, PROCESSOR_LEVEL=6, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, PT8HOME=C:\Program Files\Cisco Packet Tracer 8.1.1, EFC_40428=1, ACSvcPort=17532, USERNAME=muhammad, CUDA_PATH_V12_5=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5, ProgramFiles(x86)=C:\Program Files (x86), FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\muhammad, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel, POWERSHELL_DISTRIBUTION_CHANNEL=MSI:Windows 10 Home, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\Windows, =::=::\, ZES_ENABLE_SYSMAN=1, IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl0s/nOkMXkezJLq+BvZyhwQAAAACAAAAAAAQZgAAAAEAACAAAAC5LpjvGw4r905DNz+ZFV2x1jmp5FcFgLoE9xq5C1Yh2AAAAAAOgAAAAAIAACAAAABjSFBdhfO5C5ws1eu2avTYfs0Lqk+qdmw0m+mGpt60vGAAAACQ53u0ZV0LYBNQy8DE7wikfjMM6Hbjv84eDW7EAoDJRM4Y5CxhVkh3hfO65uzPPYYXD8GQPMhGLTNPwJ3qyxzI5YIR4jcoJwPkiy9zTzYDtGUHjJB4E8G7Us4kcuT0m7FAAAAAr0eJaogesHeXOPux54iRZb8u7BH+DGnjYRpnjdB3yaaXcXRd9eEo3dWTFEmAcB71FmQSQR/xfni+YbNhjYmXsg==, LOCALAPPDATA=C:\Users\muhammad\AppData\Local, ChocolateyLastPathUpdate=133662617838649819, USERDOMAIN=AsusZeph, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\ASUSZEPH, RlsSvcPort=22112, IDF_TOOLS_PATH=C:/Espressif, OneDrive=C:\Users\muhammad\OneDrive, APPDATA=C:\Users\muhammad\AppData\Roaming, ChocolateyInstall=C:\ProgramData\chocolatey, ChocolateyToolsLocation=C:\tools, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools, OS=Windows_NT, COMPUTERNAME=ASUSZEPH, EnableLog=INFO, PROCESSOR_REVISION=ba02, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, SystemRoot=C:\Windows, TEMP=C:\Users\muhammad\AppData\Local\Temp, HOMEDRIVE=C:, USERPROFILE=C:\Users\muhammad, TMP=C:\Users\muhammad\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=20}
+
+!ENTRY org.eclipse.ui.workbench 2 0 2024-11-21 09:08:52.571
+!MESSAGE Exception occurred while checking large file editor for org.eclipse.ui.part.FileEditorInput(/Users/muhammad/Desktop/uni/realtime/ads/ads-freeRTOS/tool_set_config.json)
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.ui.part.FileEditorInput.getPath(FileEditorInput.java:184)
+	at org.eclipse.ui.internal.LargeFileLimitsPreferenceHandler.getEditorForInput(LargeFileLimitsPreferenceHandler.java:233)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3158)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3069)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:345)
+	at com.espressif.idf.ui.tools.ManageEspIdfVersionsHandler$1.run(ManageEspIdfVersionsHandler.java:53)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.846
+!MESSAGE Updating environment variables with key:ESP_IDF_VERSION value:5.3.1
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.848
+!MESSAGE Updating environment variables with key:GIT_PATH value:C:/Espressif/tools/idf-git/2.44.0/cmd/git.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.849
+!MESSAGE Updating environment variables with key:IDF_COMPONENT_MANAGER value:1
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.850
+!MESSAGE Updating environment variables with key:IDF_MAINTAINER value:1
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.851
+!MESSAGE Updating environment variables with key:IDF_PATH value:C:/Espressif/frameworks/esp-idf-v5.3.1/
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.852
+!MESSAGE Updating environment variables with key:IDF_PYTHON_ENV_PATH value:C:\Espressif\python_env\idf5.3_py3.11_env
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.854
+!MESSAGE Updating environment variables with key:OPENOCD_SCRIPTS value:C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\share\openocd\scripts
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.855
+!MESSAGE Updating environment variables with key:PATH value:C:\Espressif\tools\xtensa-esp-elf-gdb\14.2_20240403\xtensa-esp-elf-gdb\bin;C:\Espressif\tools\riscv32-esp-elf-gdb\14.2_20240403\riscv32-esp-elf-gdb\bin;C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin;C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin;C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin;C:\Espressif\tools\esp32ulp-elf\2.38_20240113\esp32ulp-elf\bin;C:\Espressif\tools\cmake\3.24.0\bin;C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\bin;C:\Espressif\tools\ninja\1.11.1\;C:\Espressif\tools\idf-exe\1.0.3\;C:\Espressif\tools\ccache\4.8\ccache-4.8-windows-x86_64;C:\Espressif\tools\dfu-util\0.11\dfu-util-0.11-win64;C:\Espressif\python_env\idf5.3_py3.11_env\Scripts;C:\Espressif\frameworks\esp-idf-v5.3.1\tools;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.856
+!MESSAGE Updating environment variables with key:PYTHON_EXE_PATH value:C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.857
+!MESSAGE Updating environment variables with key:IDF_COMPONENT_MANAGER value:1
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.857
+!MESSAGE Updating environment variables with key:IDF_MAINTAINER value:1
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.859
+!MESSAGE Executing C:\Espressif\python_env\idf5.3_py3.11_env/Scripts/python.exe C:\Espressif\frameworks\esp-idf-v5.3.1\tools\idf.py --list-targets
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:53.859
+!MESSAGE {USERDOMAIN_ROAMINGPROFILE=AsusZeph, PROCESSOR_LEVEL=6, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, PT8HOME=C:\Program Files\Cisco Packet Tracer 8.1.1, EFC_40428=1, ACSvcPort=17532, USERNAME=muhammad, CUDA_PATH_V12_5=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5, ProgramFiles(x86)=C:\Program Files (x86), FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\muhammad, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel, POWERSHELL_DISTRIBUTION_CHANNEL=MSI:Windows 10 Home, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\Windows, =::=::\, ZES_ENABLE_SYSMAN=1, IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl0s/nOkMXkezJLq+BvZyhwQAAAACAAAAAAAQZgAAAAEAACAAAAC5LpjvGw4r905DNz+ZFV2x1jmp5FcFgLoE9xq5C1Yh2AAAAAAOgAAAAAIAACAAAABjSFBdhfO5C5ws1eu2avTYfs0Lqk+qdmw0m+mGpt60vGAAAACQ53u0ZV0LYBNQy8DE7wikfjMM6Hbjv84eDW7EAoDJRM4Y5CxhVkh3hfO65uzPPYYXD8GQPMhGLTNPwJ3qyxzI5YIR4jcoJwPkiy9zTzYDtGUHjJB4E8G7Us4kcuT0m7FAAAAAr0eJaogesHeXOPux54iRZb8u7BH+DGnjYRpnjdB3yaaXcXRd9eEo3dWTFEmAcB71FmQSQR/xfni+YbNhjYmXsg==, LOCALAPPDATA=C:\Users\muhammad\AppData\Local, ChocolateyLastPathUpdate=133662617838649819, USERDOMAIN=AsusZeph, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\ASUSZEPH, RlsSvcPort=22112, IDF_TOOLS_PATH=C:/Espressif, OneDrive=C:\Users\muhammad\OneDrive, APPDATA=C:\Users\muhammad\AppData\Roaming, ChocolateyInstall=C:\ProgramData\chocolatey, ChocolateyToolsLocation=C:\tools, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools, OS=Windows_NT, COMPUTERNAME=ASUSZEPH, EnableLog=INFO, PROCESSOR_REVISION=ba02, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, SystemRoot=C:\Windows, TEMP=C:\Users\muhammad\AppData\Local\Temp, HOMEDRIVE=C:, USERPROFILE=C:\Users\muhammad, TMP=C:\Users\muhammad\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=20}
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:54.590
+!MESSAGE Initializing toolchain...
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:54.590
+!MESSAGE idf_tools.py path: C:/Espressif/frameworks/esp-idf-v5.3.1//tools/idf_tools.py
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:54.591
+!MESSAGE [C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe, C:/Espressif/frameworks/esp-idf-v5.3.1//tools/idf_tools.py, export, --format=key-value]
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:55.032
+!MESSAGE idf_tools.py export output: Not using an unsupported version of tool cmake found in PATH: 3.29.0. To use it, run 'C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.3.1\tools\idf_tools.py export --prefer-system'
+WARNING: The following issue occurred while accessing the ESP-IDF version file in the Python environment: [Errno 2] No such file or directory: 'C:\\Espressif\\python_env\\idf5.3_py3.11_env\\idf_version.txt'. (Diagnostic information. It can be ignored.)
+OPENOCD_SCRIPTS=C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\share\openocd\scripts
+IDF_CCACHE_ENABLE=1
+ESP_ROM_ELF_DIR=C:\Espressif\tools\esp-rom-elfs\20240305\
+IDF_PYTHON_ENV_PATH=C:\Espressif\python_env\idf5.3_py3.11_env
+ESP_IDF_VERSION=5.3
+PATH=C:\Espressif\tools\xtensa-esp-elf-gdb\14.2_20240403\xtensa-esp-elf-gdb\bin;C:\Espressif\tools\riscv32-esp-elf-gdb\14.2_20240403\riscv32-esp-elf-gdb\bin;C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin;C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin;C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin;C:\Espressif\tools\esp32ulp-elf\2.38_20240113\esp32ulp-elf\bin;C:\Espressif\tools\cmake\3.24.0\bin;C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\bin;C:\Espressif\tools\ninja\1.11.1\;C:\Espressif\tools\idf-exe\1.0.3\;C:\Espressif\tools\ccache\4.8\ccache-4.8-windows-x86_64;C:\Espressif\tools\dfu-util\0.11\dfu-util-0.11-win64;C:\Espressif\python_env\idf5.3_py3.11_env\Scripts;C:\Espressif\frameworks\esp-idf-v5.3.1\tools;%PATH%
+IDF_DEACTIVATE_FILE_PATH=C:\Users\muhammad\AppData\Local\Temp\tmplna3gtvridf_49296
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:55.032
+!MESSAGE PATH: C:\Espressif\tools\xtensa-esp-elf-gdb\14.2_20240403\xtensa-esp-elf-gdb\bin;C:\Espressif\tools\riscv32-esp-elf-gdb\14.2_20240403\riscv32-esp-elf-gdb\bin;C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin;C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin;C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin;C:\Espressif\tools\esp32ulp-elf\2.38_20240113\esp32ulp-elf\bin;C:\Espressif\tools\cmake\3.24.0\bin;C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\bin;C:\Espressif\tools\ninja\1.11.1\;C:\Espressif\tools\idf-exe\1.0.3\;C:\Espressif\tools\ccache\4.8\ccache-4.8-windows-x86_64;C:\Espressif\tools\dfu-util\0.11\dfu-util-0.11-win64;C:\Espressif\python_env\idf5.3_py3.11_env\Scripts;C:\Espressif\frameworks\esp-idf-v5.3.1\tools;%PATH%
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:55.033
+!MESSAGE [C:\Espressif\tools\xtensa-esp-elf-gdb\14.2_20240403\xtensa-esp-elf-gdb\bin;C:\Espressif\tools\riscv32-esp-elf-gdb\14.2_20240403\riscv32-esp-elf-gdb\bin;C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin;C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin;C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin;C:\Espressif\tools\esp32ulp-elf\2.38_20240113\esp32ulp-elf\bin;C:\Espressif\tools\cmake\3.24.0\bin;C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\bin;C:\Espressif\tools\ninja\1.11.1\;C:\Espressif\tools\idf-exe\1.0.3\;C:\Espressif\tools\ccache\4.8\ccache-4.8-windows-x86_64;C:\Espressif\tools\dfu-util\0.11\dfu-util-0.11-win64;C:\Espressif\python_env\idf5.3_py3.11_env\Scripts;C:\Espressif\frameworks\esp-idf-v5.3.1\tools;%PATH%]
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:55.108
+!MESSAGE Executing C:\Espressif\python_env\idf5.3_py3.11_env/Scripts/python.exe -m pip list
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:55.109
+!MESSAGE {USERDOMAIN_ROAMINGPROFILE=AsusZeph, PROCESSOR_LEVEL=6, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, PT8HOME=C:\Program Files\Cisco Packet Tracer 8.1.1, EFC_40428=1, ACSvcPort=17532, USERNAME=muhammad, CUDA_PATH_V12_5=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5, ProgramFiles(x86)=C:\Program Files (x86), FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\muhammad, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel, POWERSHELL_DISTRIBUTION_CHANNEL=MSI:Windows 10 Home, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\Windows, =::=::\, ZES_ENABLE_SYSMAN=1, IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl0s/nOkMXkezJLq+BvZyhwQAAAACAAAAAAAQZgAAAAEAACAAAAC5LpjvGw4r905DNz+ZFV2x1jmp5FcFgLoE9xq5C1Yh2AAAAAAOgAAAAAIAACAAAABjSFBdhfO5C5ws1eu2avTYfs0Lqk+qdmw0m+mGpt60vGAAAACQ53u0ZV0LYBNQy8DE7wikfjMM6Hbjv84eDW7EAoDJRM4Y5CxhVkh3hfO65uzPPYYXD8GQPMhGLTNPwJ3qyxzI5YIR4jcoJwPkiy9zTzYDtGUHjJB4E8G7Us4kcuT0m7FAAAAAr0eJaogesHeXOPux54iRZb8u7BH+DGnjYRpnjdB3yaaXcXRd9eEo3dWTFEmAcB71FmQSQR/xfni+YbNhjYmXsg==, LOCALAPPDATA=C:\Users\muhammad\AppData\Local, ChocolateyLastPathUpdate=133662617838649819, USERDOMAIN=AsusZeph, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\ASUSZEPH, RlsSvcPort=22112, IDF_TOOLS_PATH=C:/Espressif, OneDrive=C:\Users\muhammad\OneDrive, APPDATA=C:\Users\muhammad\AppData\Roaming, ChocolateyInstall=C:\ProgramData\chocolatey, ChocolateyToolsLocation=C:\tools, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools, OS=Windows_NT, COMPUTERNAME=ASUSZEPH, EnableLog=INFO, PROCESSOR_REVISION=ba02, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, SystemRoot=C:\Windows, TEMP=C:\Users\muhammad\AppData\Local\Temp, HOMEDRIVE=C:, USERPROFILE=C:\Users\muhammad, TMP=C:\Users\muhammad\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=20}
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:56.519
+!MESSAGE IDF path C:/Espressif/frameworks/esp-idf-v5.3.1/
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:56.551
+!MESSAGE IDF path C:/Espressif/frameworks/esp-idf-v5.3.1/
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:08:57.505
+!MESSAGE ESP-IDF v5.3.1-dirty
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:21.378
+!MESSAGE Source Template path:null
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:21.734
+!MESSAGE Project Name:: adsFreeRTOS
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:21.734
+!MESSAGE Project:: P/adsFreeRTOS
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:21.745
+!MESSAGE toolchain path: C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:21.752
+!MESSAGE toolchain path: C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:21.948
+!MESSAGE C:\Users\muhammad\Desktop\uni\realtime\ads\ads-freeRTOS\adsFreeRTOS\build\project_description.json could not find
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:21.953
+!MESSAGE Project Name:: adsFreeRTOS
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:21.954
+!MESSAGE Project:: P/adsFreeRTOS
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:21.958
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:21.961
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:22.056
+!MESSAGE Open On-Chip Debugger v0.12.0-esp32-20240318 (2024-03-18-18:26)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY org.eclipse.jface 2 0 2024-11-21 09:09:26.261
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:762)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.add(AbstractTreeViewer.java:190)
+	at org.eclipse.ui.navigator.CommonViewer.add(CommonViewer.java:305)
+	at org.eclipse.ui.internal.navigator.resources.workbench.ResourceExtensionContentProvider.lambda$1(ResourceExtensionContentProvider.java:270)
+	at org.eclipse.ui.internal.navigator.resources.workbench.ResourceExtensionContentProvider.runUpdates(ResourceExtensionContentProvider.java:300)
+	at org.eclipse.ui.internal.navigator.resources.workbench.ResourceExtensionContentProvider.processDelta(ResourceExtensionContentProvider.java:127)
+	at org.eclipse.ui.model.WorkbenchContentProvider.resourceChanged(WorkbenchContentProvider.java:103)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:122)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.getBuildContainer(IDFBuildConfiguration.java:159)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.getBuildContainerPath(IDFBuildConfiguration.java:177)
+	at com.espressif.idf.core.build.IDFBuildConfiguration.getBuildDirectoryURI(IDFBuildConfiguration.java:209)
+	at org.eclipse.cdt.core.build.CBuildConfiguration.getScannerInformation(CBuildConfiguration.java:745)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.CModelBuilder2.parse(CModelBuilder2.java:163)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parseUsingCModelBuilder(TranslationUnit.java:683)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parse(TranslationUnit.java:670)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.buildStructure(TranslationUnit.java:469)
+	at org.eclipse.cdt.internal.core.model.Openable.generateInfos(Openable.java:276)
+	at org.eclipse.cdt.internal.core.model.CElement.openWhenClosed(CElement.java:428)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getElementInfo(TranslationUnit.java:458)
+	at org.eclipse.cdt.internal.core.model.CElement.getElementInfo(CElement.java:296)
+	at org.eclipse.cdt.internal.core.model.Parent.getChildren(Parent.java:57)
+	at org.eclipse.cdt.internal.ui.BaseCElementContentProvider.getTranslationUnitChildren(BaseCElementContentProvider.java:491)
+	at org.eclipse.cdt.internal.ui.BaseCElementContentProvider.getChildren(BaseCElementContentProvider.java:279)
+	at org.eclipse.cdt.internal.ui.cview.CViewContentProvider.getChildren(CViewContentProvider.java:92)
+	at org.eclipse.cdt.internal.ui.navigator.CNavigatorContentProvider.getChildren(CNavigatorContentProvider.java:233)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(SafeDelegateTreeContentProvider.java:95)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(SafeDelegateTreeContentProvider.java:238)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(SafeDelegateTreeContentProvider.java:93)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$1.run(NavigatorContentServiceContentProvider.java:159)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.internalGetChildren(NavigatorContentServiceContentProvider.java:145)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getChildren(NavigatorContentServiceContentProvider.java:131)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getRawChildren(AbstractTreeViewer.java:1470)
+	at org.eclipse.jface.viewers.TreeViewer.getRawChildren(TreeViewer.java:352)
+	at org.eclipse.jface.viewers.StructuredViewer.getFilteredChildren(StructuredViewer.java:849)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:673)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:866)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:611)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:819)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleTreeExpand(AbstractTreeViewer.java:1603)
+	at org.eclipse.jface.viewers.TreeViewer.handleTreeExpand(TreeViewer.java:904)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$3.treeExpanded(AbstractTreeViewer.java:1615)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:149)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1184)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1169)
+	at org.eclipse.swt.widgets.Tree.wmNotifyChild(Tree.java:7715)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5778)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1965)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5346)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4768)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Tree.callWindowProc(Tree.java:1574)
+	at org.eclipse.swt.widgets.Tree.WM_LBUTTONDOWN(Tree.java:6616)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4748)
+	at org.eclipse.swt.widgets.Tree.windowProc(Tree.java:6148)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3671)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:26.468
+!MESSAGE clangd: C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin\clangd.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:26.469
+!MESSAGE clangd: C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin\clangd.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:26.473
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:26.477
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:09:26.481
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:10:49.240
+!MESSAGE clangd: C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin\clangd.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:10:49.245
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:10:49.250
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:10:49.318
+!MESSAGE C:\Espressif\frameworks\esp-idf-v5.3.1\tools\idf.py -p  flash
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:10:51.316
+!MESSAGE clangd: C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin\clangd.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:10:51.320
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:10:51.324
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:04.312
+!MESSAGE Project Name:: adsFreeRTOS
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:04.312
+!MESSAGE Project:: P/adsFreeRTOS
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:04.320
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:04.324
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:04.326
+!MESSAGE clangd: C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin\clangd.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:04.331
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:04.337
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:06.702
+!MESSAGE clangd: C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin\clangd.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:06.707
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:06.711
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:06.854
+!MESSAGE C:\Espressif\frameworks\esp-idf-v5.3.1\tools\idf.py -p COM8 flash
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:06.857
+!MESSAGE flash command: C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.3.1\tools\idf.py -p COM8 flash
+
+!ENTRY org.eclipse.ui 4 0 2024-11-21 09:11:08.614
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:488)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:407)
+	at org.eclipse.swt.widgets.Text.append(Text.java:528)
+	at com.espressif.idf.launch.serial.ui.internal.NewSerialFlashTargetWizardPage$TargetPortInfo.lambda$1(NewSerialFlashTargetWizardPage.java:397)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY org.eclipse.ui 4 0 2024-11-21 09:11:08.614
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:488)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:407)
+	at org.eclipse.swt.widgets.Text.append(Text.java:528)
+	at com.espressif.idf.launch.serial.ui.internal.NewSerialFlashTargetWizardPage$TargetPortInfo.lambda$1(NewSerialFlashTargetWizardPage.java:397)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY org.eclipse.ui 4 0 2024-11-21 09:11:08.615
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:488)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:407)
+	at org.eclipse.swt.widgets.Text.append(Text.java:528)
+	at com.espressif.idf.launch.serial.ui.internal.NewSerialFlashTargetWizardPage$TargetPortInfo.lambda$1(NewSerialFlashTargetWizardPage.java:397)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY org.eclipse.ui 4 0 2024-11-21 09:11:08.616
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:488)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:407)
+	at org.eclipse.swt.widgets.Text.append(Text.java:528)
+	at com.espressif.idf.launch.serial.ui.internal.NewSerialFlashTargetWizardPage$TargetPortInfo.lambda$1(NewSerialFlashTargetWizardPage.java:397)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY org.eclipse.ui 4 0 2024-11-21 09:11:08.637
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:488)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:407)
+	at org.eclipse.swt.widgets.Text.append(Text.java:528)
+	at com.espressif.idf.launch.serial.ui.internal.NewSerialFlashTargetWizardPage$TargetPortInfo.lambda$3(NewSerialFlashTargetWizardPage.java:421)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:52.671
+!MESSAGE Server started!
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:52.685
+!MESSAGE Executing C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe -m pip list
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:52.685
+!MESSAGE {USERDOMAIN_ROAMINGPROFILE=AsusZeph, PROCESSOR_LEVEL=6, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, PT8HOME=C:\Program Files\Cisco Packet Tracer 8.1.1, EFC_40428=1, ACSvcPort=17532, USERNAME=muhammad, CUDA_PATH_V12_5=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5, ProgramFiles(x86)=C:\Program Files (x86), FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\muhammad, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel, POWERSHELL_DISTRIBUTION_CHANNEL=MSI:Windows 10 Home, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\Windows, =::=::\, ZES_ENABLE_SYSMAN=1, IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl0s/nOkMXkezJLq+BvZyhwQAAAACAAAAAAAQZgAAAAEAACAAAAC5LpjvGw4r905DNz+ZFV2x1jmp5FcFgLoE9xq5C1Yh2AAAAAAOgAAAAAIAACAAAABjSFBdhfO5C5ws1eu2avTYfs0Lqk+qdmw0m+mGpt60vGAAAACQ53u0ZV0LYBNQy8DE7wikfjMM6Hbjv84eDW7EAoDJRM4Y5CxhVkh3hfO65uzPPYYXD8GQPMhGLTNPwJ3qyxzI5YIR4jcoJwPkiy9zTzYDtGUHjJB4E8G7Us4kcuT0m7FAAAAAr0eJaogesHeXOPux54iRZb8u7BH+DGnjYRpnjdB3yaaXcXRd9eEo3dWTFEmAcB71FmQSQR/xfni+YbNhjYmXsg==, LOCALAPPDATA=C:\Users\muhammad\AppData\Local, ChocolateyLastPathUpdate=133662617838649819, USERDOMAIN=AsusZeph, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\ASUSZEPH, RlsSvcPort=22112, IDF_TOOLS_PATH=C:/Espressif, OneDrive=C:\Users\muhammad\OneDrive, APPDATA=C:\Users\muhammad\AppData\Roaming, ChocolateyInstall=C:\ProgramData\chocolatey, ChocolateyToolsLocation=C:\tools, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools, OS=Windows_NT, COMPUTERNAME=ASUSZEPH, EnableLog=INFO, PROCESSOR_REVISION=ba02, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, SystemRoot=C:\Windows, TEMP=C:\Users\muhammad\AppData\Local\Temp, HOMEDRIVE=C:, USERPROFILE=C:\Users\muhammad, TMP=C:\Users\muhammad\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=20}
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:53.486
+!MESSAGE websocket-client already installed
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:54.371
+!MESSAGE ESP-IDF v5.3.1-dirty
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:54.374
+!MESSAGE [C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe, C:\Espressif\frameworks\esp-idf-v5.3.1\tools\idf_monitor.py, --no-reset, -p, \\.\COM8, -b, 115200, --ws, ws://localhost:34774, C:/Users/muhammad/Desktop/uni/realtime/ads/ads-freeRTOS/adsFreeRTOS/build/app-template.elf]
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:54.376
+!MESSAGE {USERDOMAIN_ROAMINGPROFILE=AsusZeph, PATH=C:\Espressif\tools\xtensa-esp-elf-gdb\14.2_20240403\xtensa-esp-elf-gdb\bin;C:\Espressif\tools\riscv32-esp-elf-gdb\14.2_20240403\riscv32-esp-elf-gdb\bin;C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin;C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin;C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin;C:\Espressif\tools\esp32ulp-elf\2.38_20240113\esp32ulp-elf\bin;C:\Espressif\tools\cmake\3.24.0\bin;C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\bin;C:\Espressif\tools\ninja\1.11.1\;C:\Espressif\tools\idf-exe\1.0.3\;C:\Espressif\tools\ccache\4.8\ccache-4.8-windows-x86_64;C:\Espressif\tools\dfu-util\0.11\dfu-util-0.11-win64;C:\Espressif\python_env\idf5.3_py3.11_env\Scripts;C:\Espressif\frameworks\esp-idf-v5.3.1\tools;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools, PROCESSOR_LEVEL=6, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, ESP_IDF_VERSION=5.3.1, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, OPENOCD_SCRIPTS=C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\share\openocd\scripts, PT8HOME=C:\Program Files\Cisco Packet Tracer 8.1.1, EFC_40428=1, ACSvcPort=17532, USERNAME=muhammad, CUDA_PATH_V12_5=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5, ProgramFiles(x86)=C:\Program Files (x86), FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, ProgramData=C:\ProgramData, IDF_COMPONENT_MANAGER=1, ProgramW6432=C:\Program Files, HOMEPATH=\Users\muhammad, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel, POWERSHELL_DISTRIBUTION_CHANNEL=MSI:Windows 10 Home, PYTHON_EXE_PATH=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\Windows, =::=::\, ZES_ENABLE_SYSMAN=1, IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl0s/nOkMXkezJLq+BvZyhwQAAAACAAAAAAAQZgAAAAEAACAAAAC5LpjvGw4r905DNz+ZFV2x1jmp5FcFgLoE9xq5C1Yh2AAAAAAOgAAAAAIAACAAAABjSFBdhfO5C5ws1eu2avTYfs0Lqk+qdmw0m+mGpt60vGAAAACQ53u0ZV0LYBNQy8DE7wikfjMM6Hbjv84eDW7EAoDJRM4Y5CxhVkh3hfO65uzPPYYXD8GQPMhGLTNPwJ3qyxzI5YIR4jcoJwPkiy9zTzYDtGUHjJB4E8G7Us4kcuT0m7FAAAAAr0eJaogesHeXOPux54iRZb8u7BH+DGnjYRpnjdB3yaaXcXRd9eEo3dWTFEmAcB71FmQSQR/xfni+YbNhjYmXsg==, LOCALAPPDATA=C:\Users\muhammad\AppData\Local, ChocolateyLastPathUpdate=133662617838649819, GIT_PATH=C:/Espressif/tools/idf-git/2.44.0/cmd/git.exe, USERDOMAIN=AsusZeph, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\ASUSZEPH, RlsSvcPort=22112, IDF_TOOLS_PATH=C:/Espressif, OneDrive=C:\Users\muhammad\OneDrive, APPDATA=C:\Users\muhammad\AppData\Roaming, ChocolateyInstall=C:\ProgramData\chocolatey, ChocolateyToolsLocation=C:\tools, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools, OS=Windows_NT, COMPUTERNAME=ASUSZEPH, IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.3.1/, EnableLog=INFO, PROCESSOR_REVISION=ba02, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, IDF_MAINTAINER=1, SystemRoot=C:\Windows, TEMP=C:\Users\muhammad\AppData\Local\Temp, PYTHONUNBUFFERED=1, HOMEDRIVE=C:, USERPROFILE=C:\Users\muhammad, TMP=C:\Users\muhammad\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=20, IDF_PYTHON_ENV_PATH=C:\Espressif\python_env\idf5.3_py3.11_env}
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:54.376
+!MESSAGE {USERDOMAIN_ROAMINGPROFILE=AsusZeph, PATH=C:\Espressif\tools\xtensa-esp-elf-gdb\14.2_20240403\xtensa-esp-elf-gdb\bin;C:\Espressif\tools\riscv32-esp-elf-gdb\14.2_20240403\riscv32-esp-elf-gdb\bin;C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin;C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin;C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin;C:\Espressif\tools\esp32ulp-elf\2.38_20240113\esp32ulp-elf\bin;C:\Espressif\tools\cmake\3.24.0\bin;C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\bin;C:\Espressif\tools\ninja\1.11.1\;C:\Espressif\tools\idf-exe\1.0.3\;C:\Espressif\tools\ccache\4.8\ccache-4.8-windows-x86_64;C:\Espressif\tools\dfu-util\0.11\dfu-util-0.11-win64;C:\Espressif\python_env\idf5.3_py3.11_env\Scripts;C:\Espressif\frameworks\esp-idf-v5.3.1\tools;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools, PROCESSOR_LEVEL=6, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, ESP_IDF_VERSION=5.3.1, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, OPENOCD_SCRIPTS=C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\share\openocd\scripts, PT8HOME=C:\Program Files\Cisco Packet Tracer 8.1.1, EFC_40428=1, ACSvcPort=17532, USERNAME=muhammad, CUDA_PATH_V12_5=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5, ProgramFiles(x86)=C:\Program Files (x86), FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, ProgramData=C:\ProgramData, IDF_COMPONENT_MANAGER=1, ProgramW6432=C:\Program Files, HOMEPATH=\Users\muhammad, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel, POWERSHELL_DISTRIBUTION_CHANNEL=MSI:Windows 10 Home, PYTHON_EXE_PATH=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\Windows, =::=::\, ZES_ENABLE_SYSMAN=1, IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl0s/nOkMXkezJLq+BvZyhwQAAAACAAAAAAAQZgAAAAEAACAAAAC5LpjvGw4r905DNz+ZFV2x1jmp5FcFgLoE9xq5C1Yh2AAAAAAOgAAAAAIAACAAAABjSFBdhfO5C5ws1eu2avTYfs0Lqk+qdmw0m+mGpt60vGAAAACQ53u0ZV0LYBNQy8DE7wikfjMM6Hbjv84eDW7EAoDJRM4Y5CxhVkh3hfO65uzPPYYXD8GQPMhGLTNPwJ3qyxzI5YIR4jcoJwPkiy9zTzYDtGUHjJB4E8G7Us4kcuT0m7FAAAAAr0eJaogesHeXOPux54iRZb8u7BH+DGnjYRpnjdB3yaaXcXRd9eEo3dWTFEmAcB71FmQSQR/xfni+YbNhjYmXsg==, LOCALAPPDATA=C:\Users\muhammad\AppData\Local, ChocolateyLastPathUpdate=133662617838649819, GIT_PATH=C:/Espressif/tools/idf-git/2.44.0/cmd/git.exe, USERDOMAIN=AsusZeph, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\ASUSZEPH, TERM=vt102, RlsSvcPort=22112, IDF_TOOLS_PATH=C:/Espressif, OneDrive=C:\Users\muhammad\OneDrive, APPDATA=C:\Users\muhammad\AppData\Roaming, ChocolateyInstall=C:\ProgramData\chocolatey, ChocolateyToolsLocation=C:\tools, CommonProgramFiles=C:\Program Files\Common Files, OS=Windows_NT, COMPUTERNAME=ASUSZEPH, IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.3.1/, EnableLog=INFO, PROCESSOR_REVISION=ba02, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, IDF_MAINTAINER=1, SystemRoot=C:\Windows, TEMP=C:\Users\muhammad\AppData\Local\Temp, PYTHONUNBUFFERED=1, HOMEDRIVE=C:, USERPROFILE=C:\Users\muhammad, TMP=C:\Users\muhammad\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=20, IDF_PYTHON_ENV_PATH=C:\Espressif\python_env\idf5.3_py3.11_env}
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:54.870
+!MESSAGE Connection Made to: 
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:11:54.870
+!MESSAGE 0:0:0:0:0:0:0:1
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:12:18.336
+!MESSAGE clangd: C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin\clangd.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:12:18.339
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:12:18.343
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:00.942
+!MESSAGE clangd: C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin\clangd.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:00.947
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:00.947
+!MESSAGE org.java_websocket.WebSocketImpl@53e9c8ac is terminated!
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:00.951
+!MESSAGE toolchain path: C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:01.947
+!MESSAGE C:\Espressif\frameworks\esp-idf-v5.3.1\tools\idf.py -p COM8 flash
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:01.949
+!MESSAGE flash command: C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.3.1\tools\idf.py -p COM8 flash
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:14.069
+!MESSAGE Executing C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe -m pip list
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:14.070
+!MESSAGE {USERDOMAIN_ROAMINGPROFILE=AsusZeph, PROCESSOR_LEVEL=6, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, PT8HOME=C:\Program Files\Cisco Packet Tracer 8.1.1, EFC_40428=1, ACSvcPort=17532, USERNAME=muhammad, CUDA_PATH_V12_5=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5, ProgramFiles(x86)=C:\Program Files (x86), FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\muhammad, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel, POWERSHELL_DISTRIBUTION_CHANNEL=MSI:Windows 10 Home, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\Windows, =::=::\, ZES_ENABLE_SYSMAN=1, IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl0s/nOkMXkezJLq+BvZyhwQAAAACAAAAAAAQZgAAAAEAACAAAAC5LpjvGw4r905DNz+ZFV2x1jmp5FcFgLoE9xq5C1Yh2AAAAAAOgAAAAAIAACAAAABjSFBdhfO5C5ws1eu2avTYfs0Lqk+qdmw0m+mGpt60vGAAAACQ53u0ZV0LYBNQy8DE7wikfjMM6Hbjv84eDW7EAoDJRM4Y5CxhVkh3hfO65uzPPYYXD8GQPMhGLTNPwJ3qyxzI5YIR4jcoJwPkiy9zTzYDtGUHjJB4E8G7Us4kcuT0m7FAAAAAr0eJaogesHeXOPux54iRZb8u7BH+DGnjYRpnjdB3yaaXcXRd9eEo3dWTFEmAcB71FmQSQR/xfni+YbNhjYmXsg==, LOCALAPPDATA=C:\Users\muhammad\AppData\Local, ChocolateyLastPathUpdate=133662617838649819, USERDOMAIN=AsusZeph, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\ASUSZEPH, RlsSvcPort=22112, IDF_TOOLS_PATH=C:/Espressif, OneDrive=C:\Users\muhammad\OneDrive, APPDATA=C:\Users\muhammad\AppData\Roaming, ChocolateyInstall=C:\ProgramData\chocolatey, ChocolateyToolsLocation=C:\tools, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools, OS=Windows_NT, COMPUTERNAME=ASUSZEPH, EnableLog=INFO, PROCESSOR_REVISION=ba02, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, SystemRoot=C:\Windows, TEMP=C:\Users\muhammad\AppData\Local\Temp, HOMEDRIVE=C:, USERPROFILE=C:\Users\muhammad, TMP=C:\Users\muhammad\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=20}
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:14.071
+!MESSAGE Server started!
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:14.489
+!MESSAGE websocket-client already installed
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:15.343
+!MESSAGE ESP-IDF v5.3.1-dirty
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:15.346
+!MESSAGE [C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe, C:\Espressif\frameworks\esp-idf-v5.3.1\tools\idf_monitor.py, --no-reset, -p, \\.\COM8, -b, 115200, --ws, ws://localhost:34790, C:/Users/muhammad/Desktop/uni/realtime/ads/ads-freeRTOS/adsFreeRTOS/build/app-template.elf]
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:15.347
+!MESSAGE {USERDOMAIN_ROAMINGPROFILE=AsusZeph, PATH=C:\Espressif\tools\xtensa-esp-elf-gdb\14.2_20240403\xtensa-esp-elf-gdb\bin;C:\Espressif\tools\riscv32-esp-elf-gdb\14.2_20240403\riscv32-esp-elf-gdb\bin;C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin;C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin;C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin;C:\Espressif\tools\esp32ulp-elf\2.38_20240113\esp32ulp-elf\bin;C:\Espressif\tools\cmake\3.24.0\bin;C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\bin;C:\Espressif\tools\ninja\1.11.1\;C:\Espressif\tools\idf-exe\1.0.3\;C:\Espressif\tools\ccache\4.8\ccache-4.8-windows-x86_64;C:\Espressif\tools\dfu-util\0.11\dfu-util-0.11-win64;C:\Espressif\python_env\idf5.3_py3.11_env\Scripts;C:\Espressif\frameworks\esp-idf-v5.3.1\tools;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools, PROCESSOR_LEVEL=6, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, ESP_IDF_VERSION=5.3.1, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, OPENOCD_SCRIPTS=C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\share\openocd\scripts, PT8HOME=C:\Program Files\Cisco Packet Tracer 8.1.1, EFC_40428=1, ACSvcPort=17532, USERNAME=muhammad, CUDA_PATH_V12_5=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5, ProgramFiles(x86)=C:\Program Files (x86), FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, ProgramData=C:\ProgramData, IDF_COMPONENT_MANAGER=1, ProgramW6432=C:\Program Files, HOMEPATH=\Users\muhammad, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel, POWERSHELL_DISTRIBUTION_CHANNEL=MSI:Windows 10 Home, PYTHON_EXE_PATH=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\Windows, =::=::\, ZES_ENABLE_SYSMAN=1, IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl0s/nOkMXkezJLq+BvZyhwQAAAACAAAAAAAQZgAAAAEAACAAAAC5LpjvGw4r905DNz+ZFV2x1jmp5FcFgLoE9xq5C1Yh2AAAAAAOgAAAAAIAACAAAABjSFBdhfO5C5ws1eu2avTYfs0Lqk+qdmw0m+mGpt60vGAAAACQ53u0ZV0LYBNQy8DE7wikfjMM6Hbjv84eDW7EAoDJRM4Y5CxhVkh3hfO65uzPPYYXD8GQPMhGLTNPwJ3qyxzI5YIR4jcoJwPkiy9zTzYDtGUHjJB4E8G7Us4kcuT0m7FAAAAAr0eJaogesHeXOPux54iRZb8u7BH+DGnjYRpnjdB3yaaXcXRd9eEo3dWTFEmAcB71FmQSQR/xfni+YbNhjYmXsg==, LOCALAPPDATA=C:\Users\muhammad\AppData\Local, ChocolateyLastPathUpdate=133662617838649819, GIT_PATH=C:/Espressif/tools/idf-git/2.44.0/cmd/git.exe, USERDOMAIN=AsusZeph, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\ASUSZEPH, RlsSvcPort=22112, IDF_TOOLS_PATH=C:/Espressif, OneDrive=C:\Users\muhammad\OneDrive, APPDATA=C:\Users\muhammad\AppData\Roaming, ChocolateyInstall=C:\ProgramData\chocolatey, ChocolateyToolsLocation=C:\tools, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools, OS=Windows_NT, COMPUTERNAME=ASUSZEPH, IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.3.1/, EnableLog=INFO, PROCESSOR_REVISION=ba02, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, IDF_MAINTAINER=1, SystemRoot=C:\Windows, TEMP=C:\Users\muhammad\AppData\Local\Temp, PYTHONUNBUFFERED=1, HOMEDRIVE=C:, USERPROFILE=C:\Users\muhammad, TMP=C:\Users\muhammad\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=20, IDF_PYTHON_ENV_PATH=C:\Espressif\python_env\idf5.3_py3.11_env}
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:15.347
+!MESSAGE {USERDOMAIN_ROAMINGPROFILE=AsusZeph, PATH=C:\Espressif\tools\xtensa-esp-elf-gdb\14.2_20240403\xtensa-esp-elf-gdb\bin;C:\Espressif\tools\riscv32-esp-elf-gdb\14.2_20240403\riscv32-esp-elf-gdb\bin;C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin;C:\Espressif\tools\esp-clang\16.0.1-fe4f10a809\esp-clang\bin;C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin;C:\Espressif\tools\esp32ulp-elf\2.38_20240113\esp32ulp-elf\bin;C:\Espressif\tools\cmake\3.24.0\bin;C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\bin;C:\Espressif\tools\ninja\1.11.1\;C:\Espressif\tools\idf-exe\1.0.3\;C:\Espressif\tools\ccache\4.8\ccache-4.8-windows-x86_64;C:\Espressif\tools\dfu-util\0.11\dfu-util-0.11-win64;C:\Espressif\python_env\idf5.3_py3.11_env\Scripts;C:\Espressif\frameworks\esp-idf-v5.3.1\tools;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Program Files (x86)\Incredibuild;C:\Python312;C:\Program Files\CMake\bin;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;C:\Users\muhammad\jython2.7.3;C:\Program Files\NASM;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Program Files\qemu;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\muhammad\jq.exe;C:\Program Files\PowerShell\7\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\muhammad\AppData\Local\Programs\Python\Python312\;C:\Users\muhammad\.cargo\bin;C:\Users\muhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\muhammad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muhammad\AppData\Roaming\npm;C:\Users\muhammad\ghidra_11.0_PUBLIC;C:\Users\muhammad\Desktop\files\apps\HellShell\x64\Release;C:\Users\muhammad\Desktop\files\apps\EntropyReducer\x64\Release;C:\Users\muhammad\Desktop\files\apps\KeyGuard\x64\Release;D:\Nmap;C:\Program Files\Neovim\bin;C:\Users\muhammad\jython2.7.3;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\SurrealDB;C:\Users\muhammad\.dotnet\tools;C:\Users\muhammad\Documents\PowerShell\Scripts;C:\Program Files\qemu;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\muhammad\AppData\Local\Programs\mongosh\;C:\Users\muhammad\AppData\Local\Programs\mongosh;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\zig.zig_Microsoft.Winget.Source_8wekyb3d8bbwe\zig-windows-x86_64-0.13.0;C:\Users\muhammad\AppData\Local\Microsoft\WinGet\Packages\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\bin;C:\Users\muhammad\platform-tools;;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Program Files (x86)\thagarat;C:\Users\muhammad\AppData\Local\thagarat;C:\Users\muhammad\.dotnet\tools, PROCESSOR_LEVEL=6, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, ESP_IDF_VERSION=5.3.1, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, OPENOCD_SCRIPTS=C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20240318\openocd-esp32\share\openocd\scripts, PT8HOME=C:\Program Files\Cisco Packet Tracer 8.1.1, EFC_40428=1, ACSvcPort=17532, USERNAME=muhammad, CUDA_PATH_V12_5=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5, ProgramFiles(x86)=C:\Program Files (x86), FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, ProgramData=C:\ProgramData, IDF_COMPONENT_MANAGER=1, ProgramW6432=C:\Program Files, HOMEPATH=\Users\muhammad, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel, POWERSHELL_DISTRIBUTION_CHANNEL=MSI:Windows 10 Home, PYTHON_EXE_PATH=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\Windows, =::=::\, ZES_ENABLE_SYSMAN=1, IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl0s/nOkMXkezJLq+BvZyhwQAAAACAAAAAAAQZgAAAAEAACAAAAC5LpjvGw4r905DNz+ZFV2x1jmp5FcFgLoE9xq5C1Yh2AAAAAAOgAAAAAIAACAAAABjSFBdhfO5C5ws1eu2avTYfs0Lqk+qdmw0m+mGpt60vGAAAACQ53u0ZV0LYBNQy8DE7wikfjMM6Hbjv84eDW7EAoDJRM4Y5CxhVkh3hfO65uzPPYYXD8GQPMhGLTNPwJ3qyxzI5YIR4jcoJwPkiy9zTzYDtGUHjJB4E8G7Us4kcuT0m7FAAAAAr0eJaogesHeXOPux54iRZb8u7BH+DGnjYRpnjdB3yaaXcXRd9eEo3dWTFEmAcB71FmQSQR/xfni+YbNhjYmXsg==, LOCALAPPDATA=C:\Users\muhammad\AppData\Local, ChocolateyLastPathUpdate=133662617838649819, GIT_PATH=C:/Espressif/tools/idf-git/2.44.0/cmd/git.exe, USERDOMAIN=AsusZeph, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\ASUSZEPH, TERM=vt102, RlsSvcPort=22112, IDF_TOOLS_PATH=C:/Espressif, OneDrive=C:\Users\muhammad\OneDrive, APPDATA=C:\Users\muhammad\AppData\Roaming, ChocolateyInstall=C:\ProgramData\chocolatey, ChocolateyToolsLocation=C:\tools, CommonProgramFiles=C:\Program Files\Common Files, OS=Windows_NT, COMPUTERNAME=ASUSZEPH, IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.3.1/, EnableLog=INFO, PROCESSOR_REVISION=ba02, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, IDF_MAINTAINER=1, SystemRoot=C:\Windows, TEMP=C:\Users\muhammad\AppData\Local\Temp, PYTHONUNBUFFERED=1, HOMEDRIVE=C:, USERPROFILE=C:\Users\muhammad, TMP=C:\Users\muhammad\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=20, IDF_PYTHON_ENV_PATH=C:\Espressif\python_env\idf5.3_py3.11_env}
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:15.649
+!MESSAGE Connection Made to: 
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:15.649
+!MESSAGE 0:0:0:0:0:0:0:1
+
+!ENTRY com.espressif.idf.core 1 0 2024-11-21 09:13:24.201
+!MESSAGE org.java_websocket.WebSocketImpl@4e5227bb is terminated!

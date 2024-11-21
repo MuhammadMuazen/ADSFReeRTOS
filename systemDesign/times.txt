@@ -1,0 +1,37 @@
+1) The heat capture system:
+    infrared (IR) sensors, which detect heat signatures from objects, such as aircraft or missiles. 
+    These sensors are part of infrared search and track (IRST) systems or heat-seeking missile guidance systems.
+
+    AN/AAQ-37 DAS: used in the defense system of the F35s fighter jet
+                    response time: between 10 - 20 ms
+    
+    {{ Should not be more that 10 to 50 ms between the object detection and classification }}
+    {{ The whole sensing process should not take more than 100 - 200 ms}}
+
+2) The satalite detection:
+    performs missile detection and early warning using satellites
+    
+    Space-Based Infrared System (SBIRS): 
+        SBIRS Cycle:
+            Detection: between 3 - 5 seconds
+            Data processing: between 2 - 5 seconds
+            Communication: 5 - 10 seconds
+            Decesion and alert: 5 - 10
+        
+    {{ In the end the full cycle can be 20 seconds for average }}
+
+3) Alerting sound:
+   Start the alert sound system
+   
+   Israel's Red Alert System (Tzeva Adom):
+      response time: between 1 - 2 seconds
+
+4) The classification takes about 5 - 10 seconds
+
+5) The shooting time takes about 5 seconds for the close range objects
+
+6) Communication with the missile setup: 1 - 5 seconds
+
+7) 
+
+{{ The whole process should not take more than 10 - 30 seconds }}
