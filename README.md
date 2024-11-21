@@ -4,7 +4,7 @@ This is a very simple abstraction in real life it can not do anyhting the inputs
 ## Project Directories
 `ads-FreeRTOS --> Have the code`
 <br>
-`systemDesign --> Have the FSM the general system desgin concepts `
+`systemDesign --> Have the FSM the and general system desgin concepts `
 
 ## Note
-Use this project for learning material however you want and good luck 
+Use this project as learning material however you want and good luck 
