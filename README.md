@@ -1,4 +1,4 @@
-# ADSFReeRTOS
+# ADSFreeRTOS
 This is a very simple abstraction in real life it can not do anyhting the inputs are just a functions no real hardware other than the ESP32 have been used in this project
 
 ## Project Directories
