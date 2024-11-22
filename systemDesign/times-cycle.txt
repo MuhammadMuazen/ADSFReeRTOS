@@ -1,0 +1,11 @@
+1) Heat detection system --> (15 ms)
+2) GPS detection system --> (10 sec)
+3) Classification --> (5 sec)
+4) Path determination --> (5 sec)
+5) Shooting the defensive object --> (5 sec)
+6) Communication with the defensive object --> (1 sec)
+7) Starting alerts --> (2 sec)
+
+----------------------------------------------------------------------
+
+The cycle full time is --> 15 ms + 10 sec + 5 sec + 5 sec + 5 sec + 1 sec + 2 sec = 15 ms + 27 sec = 27.015 ms 
