@@ -20,7 +20,7 @@ States & Transitions:
 		- (Idle) state if no interception needed.
 		- (Interception) state if interception needed.
 5- Interception:
-	- Command the missile launch system.
+	- Command the defensive object launch system.
 	-- Transition to:
 		- (Alert) state if interception fails.
 		- (Idle) state if interception succeeds.
