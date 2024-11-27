@@ -1,0 +1,14 @@
+/*
+ * ADS.h --> Header file that will hold all the needed function for the ADS system
+ * Used in --> main.c main function
+ * Author: Muhammad Muazen
+ */
+
+#ifndef MAIN_ADS_ADS_H_
+#define MAIN_ADS_ADS_H_
+
+
+void print();
+
+
+#endif /* MAIN_ADS_ADS_H_ */

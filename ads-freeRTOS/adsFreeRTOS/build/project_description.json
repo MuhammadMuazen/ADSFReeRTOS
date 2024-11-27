@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "app-template",
-    "project_version":    "1",
+    "project_version":    "1d0e6b2-dirty",
     "project_path":       "C:/Users/muhammad/Desktop/uni/realtime/ads/ads-freeRTOS/adsFreeRTOS",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "C:/Users/muhammad/Desktop/uni/realtime/ads/ads-freeRTOS/adsFreeRTOS/build",
@@ -1180,8 +1180,8 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/muhammad/Desktop/uni/realtime/ads/ads-freeRTOS/adsFreeRTOS/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/muhammad/Desktop/uni/realtime/ads/ads-freeRTOS/adsFreeRTOS/main/main.c" ],
-            "include_dirs": []
+            "sources": [ "C:/Users/muhammad/Desktop/uni/realtime/ads/ads-freeRTOS/adsFreeRTOS/main/main.c", "C:/Users/muhammad/Desktop/uni/realtime/ads/ads-freeRTOS/adsFreeRTOS/main/ADS/sensors.c" ],
+            "include_dirs": [ ".", "ADS/" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -2791,7 +2791,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": []
+            "include_dirs": [ ".", "ADS/" ]
         }
     },
     "debug_prefix_map_gdbinit": ""

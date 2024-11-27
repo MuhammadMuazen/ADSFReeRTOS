@@ -1,12 +1,12 @@
-#include <stdio.h>
-#include <stdbool.h>
-#include <freertos/FreeRTOS.h>
-#include <freertos/task.h>
-#include <unistd.h>
+/*
+* main.c --> Holds the main function for the ADS system
+*/
 
-
-
+#include "ADS/ADS.h"
+#include "freertos/idf_additions.h"
 
 void app_main(void) {
-
+	
+/*	xTaskCreate(&vHeatSensorTask, "HEAT SENSE", 
+	2048, NULL, 1, NULL);*/
 }

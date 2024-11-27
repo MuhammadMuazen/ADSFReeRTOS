@@ -17,4 +17,4 @@
 |    .rtc_slow_reserved |           24 |     0.29 |                |               |
 +----------------------------------------------------------------------------------+
 C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/\components\partition_table\gen_esp32part.py C:\Users\muhammad\Desktop\uni\realtime\ads\ads-freeRTOS\adsFreeRTOS\build\partition_table\partition-table.bin
-Total time taken to build the project: 5,262 ms
+Total time taken to build the project: 5,607 ms
