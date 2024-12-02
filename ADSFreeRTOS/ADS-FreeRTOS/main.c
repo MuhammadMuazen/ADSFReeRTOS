@@ -31,8 +31,8 @@ int main() {
 
     printf("Initializing FreeRTOS tasks and resources...\n");
 
-	//Create the queue for detection events
-	detectionQueue = xQueueCreate(5, sizeof(char*));
+    //Create the queue for detection events
+    detectionQueue = xQueueCreate(5, sizeof(char*));
 
     if (detectionQueue == NULL) {
         printf("Error: Failed to create detectionQueue.\n");
@@ -40,30 +40,30 @@ int main() {
     }
 
 	//Create semaphores
-	classificationSemaphore = xSemaphoreCreateBinary();
+    classificationSemaphore = xSemaphoreCreateBinary();
     if (classificationSemaphore == NULL) {
         printf("Error: Failed to create classificationSemaphore.\n");
         return -1;
     }
 
-	pathDeterminationSemaphore = xSemaphoreCreateBinary();
+    pathDeterminationSemaphore = xSemaphoreCreateBinary();
     if (pathDeterminationSemaphore == NULL) {
         printf("Error: Failed to create pathDeterminationSemaphore.\n");
         return -1;
     }
 
-	interceptionSemaphore = xSemaphoreCreateBinary();
-	if (interceptionSemaphore == NULL) {
-	    printf("Error: Failed to create interceptionSemaphore.\n");
-	    return -1;
-	}
+    interceptionSemaphore = xSemaphoreCreateBinary();
+    if (interceptionSemaphore == NULL) {
+	printf("Error: Failed to create interceptionSemaphore.\n");
+	return -1;
+    }
 
-	//Create tasks
-	xTaskCreate(HeatDetectionTask, "Heat Detection", 4096, NULL, HEAT_TASK_PRIORITY, NULL);
-	xTaskCreate(GPSDetectionTask, "GPS Detection", 4096, NULL, GPS_TASK_PRIORITY, NULL);
-	xTaskCreate(ClassificationTask, "Classification", 4096, NULL, CLASSIFICATION_PRIORITY, NULL);
-	xTaskCreate(PathDeterminationTask, "Path Determination", 4096, NULL, PATH_DETERMINATION_PRIORITY, NULL);
-	xTaskCreate(InterceptionTask, "Interception", 4096, NULL, INTERCEPTION_PRIORITY, NULL);
+    //Create tasks
+    xTaskCreate(HeatDetectionTask, "Heat Detection", 4096, NULL, HEAT_TASK_PRIORITY, NULL);
+    xTaskCreate(GPSDetectionTask, "GPS Detection", 4096, NULL, GPS_TASK_PRIORITY, NULL);
+    xTaskCreate(ClassificationTask, "Classification", 4096, NULL, CLASSIFICATION_PRIORITY, NULL);
+    xTaskCreate(PathDeterminationTask, "Path Determination", 4096, NULL, PATH_DETERMINATION_PRIORITY, NULL);
+    xTaskCreate(InterceptionTask, "Interception", 4096, NULL, INTERCEPTION_PRIORITY, NULL);
 
     printf("Starting scheduler...\n");
     vTaskStartScheduler();
@@ -78,7 +78,7 @@ void HeatDetectionTask(void *pvParameters) {
 
 	while(1) {
 
-		printf("Heat Detection: Checking for objects...\n");
+	printf("Heat Detection: Checking for objects...\n");
         vTaskDelay(pdMS_TO_TICKS(15)); //Heat detection delay
 
         char *event = "HeatDetection";
