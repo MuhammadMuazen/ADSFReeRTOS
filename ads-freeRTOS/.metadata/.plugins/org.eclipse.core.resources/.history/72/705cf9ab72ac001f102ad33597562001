@@ -1,9 +1,0 @@
-/*
-* main.c --> Holds the main function for the ADS system
-*/
-
-#include "ADS/ADS.h"
-
-void app_main(void) {
-	print();
-}

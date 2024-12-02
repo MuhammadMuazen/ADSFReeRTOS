@@ -1,7 +1,0 @@
-#include <freertos/FreeRTOS.h>
-#include <stdio.h>
-#include "ADS/ADS.h"
-
-void print() {
-	printf("Just a test");
-}

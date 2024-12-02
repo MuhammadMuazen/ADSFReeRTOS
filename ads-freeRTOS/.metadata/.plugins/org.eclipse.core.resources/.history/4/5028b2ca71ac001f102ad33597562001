@@ -1,9 +1,0 @@
-/*
-*	sensors.c --> This file will holds the Heat sensor task and the GPS sensor function task
-*
-*/
-#include "ADS/ADS.h"
-
-void print() {
-	printf("Just a test");
-}

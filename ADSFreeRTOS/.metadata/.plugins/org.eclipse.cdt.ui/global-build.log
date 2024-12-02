@@ -1,0 +1,21 @@
+10:10:24 **** Rebuild of configuration Debug for project ADS-FreeRTOS ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\include" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\portable\\MSVC-MingW" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS" -O0 -g3 -Wall -c -fmessage-length=0 -o timers.o "..\\timers.c" 
+gcc "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\include" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\portable\\MSVC-MingW" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS" -O0 -g3 -Wall -c -fmessage-length=0 -o "portable\\MSVC-MingW\\port.o" "..\\portable\\MSVC-MingW\\port.c" 
+gcc "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\include" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\portable\\MSVC-MingW" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS" -O0 -g3 -Wall -c -fmessage-length=0 -o list.o "..\\list.c" 
+gcc "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\include" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\portable\\MSVC-MingW" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\include" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\portable\\MSVC-MingW" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS" -O0 -g3 -Wall -c -fmessage-length=0 -o queue.o "..\\queue.c" 
+gcc "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\include" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\portable\\MSVC-MingW" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS" -O0 -g3 -Wall -c -fmessage-length=0 -o "portable\\MemMang\\heap_4.o" "..\\portable\\MemMang\\heap_4.c" 
+gcc "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\include" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\portable\\MSVC-MingW" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS" -O0 -g3 -Wall -c -fmessage-length=0 -o tasks.o "..\\tasks.c" 
+gcc "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\include" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\portable\\MSVC-MingW" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS" -O0 -g3 -Wall -c -fmessage-length=0 -o event_groups.o "..\\event_groups.c" 
+gcc "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\include" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS\\portable\\MSVC-MingW" "-IC:\\Users\\muhammad\\Desktop\\ADSFreeRTOS\\ADS-FreeRTOS" -O0 -g3 -Wall -c -fmessage-length=0 -o supporting_functions.o "..\\supporting_functions.c" 
+..\supporting_functions.c: In function 'vPrintStringAndNumber':
+..\supporting_functions.c:143:17: warning: format '%lu' expects argument of type 'long unsigned int', but argument 3 has type 'uint32_t {aka unsigned int}' [-Wformat=]
+   printf( "%s %lu\r\n", pcString, ulValue );
+                 ^
+..\supporting_functions.c: In function 'vPrintTwoStrings':
+..\supporting_functions.c:165:22: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'TickType_t {aka unsigned int}' [-Wformat=]
+   printf( "At time %lu: %s %s\r\n", xTaskGetTickCount(), pcString1, pcString2 );
+                      ^
+gcc -o ADS-FreeRTOS.exe event_groups.o list.o main.o "portable\\MSVC-MingW\\port.o" "portable\\MemMang\\heap_4.o" queue.o supporting_functions.o tasks.o timers.o -lwinmm 
+Info: Nothing to build for ADS-FreeRTOS
