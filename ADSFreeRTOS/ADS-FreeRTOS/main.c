@@ -36,7 +36,6 @@ int main() {
 
     if (detectionQueue == NULL) {
         printf("Error: Failed to create detectionQueue.\n");
-        fflush(stdout);
         return -1;
     }
 
