@@ -5,6 +5,7 @@
 #include "timers.h"
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
 //Task Priorities
 #define HEAT_TASK_PRIORITY 3
@@ -27,22 +28,50 @@ void PathDeterminationTask(void *pvParameters);
 void InterceptionTask(void *pvParameters);
 
 int main() {
+
+    printf("Initializing FreeRTOS tasks and resources...\n");
+
 	//Create the queue for detection events
 	detectionQueue = xQueueCreate(5, sizeof(char*));
 
+    if (detectionQueue == NULL) {
+        printf("Error: Failed to create detectionQueue.\n");
+        fflush(stdout);
+        return -1;
+    }
+
 	//Create semaphores
 	classificationSemaphore = xSemaphoreCreateBinary();
+    if (classificationSemaphore == NULL) {
+        printf("Error: Failed to create classificationSemaphore.\n");
+        return -1;
+    }
+
 	pathDeterminationSemaphore = xSemaphoreCreateBinary();
+    if (pathDeterminationSemaphore == NULL) {
+        printf("Error: Failed to create pathDeterminationSemaphore.\n");
+        return -1;
+    }
+
 	interceptionSemaphore = xSemaphoreCreateBinary();
+	if (interceptionSemaphore == NULL) {
+	    printf("Error: Failed to create interceptionSemaphore.\n");
+	    return -1;
+	}
 
 	//Create tasks
-	xTaskCreate(HeatDetectionTask, "Heat Detection", 1000, NULL, HEAT_TASK_PRIORITY, NULL);
-	xTaskCreate(GPSDetectionTask, "GPS Detection", 1000, NULL, GPS_TASK_PRIORITY, NULL);
-	xTaskCreate(ClassificationTask, "Classification", 1000, NULL, CLASSIFICATION_PRIORITY, NULL);
-	xTaskCreate(PathDeterminationTask, "Path Determination", 1000, NULL, PATH_DETERMINATION_PRIORITY, NULL);
-	xTaskCreate(InterceptionTask, "Interception", 1000, NULL, INTERCEPTION_PRIORITY, NULL);
+	xTaskCreate(HeatDetectionTask, "Heat Detection", 4096, NULL, HEAT_TASK_PRIORITY, NULL);
+	xTaskCreate(GPSDetectionTask, "GPS Detection", 4096, NULL, GPS_TASK_PRIORITY, NULL);
+	xTaskCreate(ClassificationTask, "Classification", 4096, NULL, CLASSIFICATION_PRIORITY, NULL);
+	xTaskCreate(PathDeterminationTask, "Path Determination", 4096, NULL, PATH_DETERMINATION_PRIORITY, NULL);
+	xTaskCreate(InterceptionTask, "Interception", 4096, NULL, INTERCEPTION_PRIORITY, NULL);
 
-	vTaskStartScheduler();
+    printf("Starting scheduler...\n");
+    vTaskStartScheduler();
+
+    printf("Error: Scheduler failed to start.\n");
+
+    return 0;
 }
 
 
