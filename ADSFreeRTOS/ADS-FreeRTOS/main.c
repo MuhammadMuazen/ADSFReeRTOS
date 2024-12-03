@@ -78,7 +78,7 @@ void HeatDetectionTask(void *pvParameters) {
 
     while(1) {
 
-	printf("Heat Detection: Checking for objects...\n");
+	printf("Heat Detection: Checking for objects... \n");
         vTaskDelay(pdMS_TO_TICKS(15)); //Heat detection delay
 
         char *event = "HeatDetection";
