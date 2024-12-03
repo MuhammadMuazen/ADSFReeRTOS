@@ -39,7 +39,7 @@ int main() {
         return -1;
     }
 
-	//Create semaphores
+    //Create semaphores
     classificationSemaphore = xSemaphoreCreateBinary();
     if (classificationSemaphore == NULL) {
         printf("Error: Failed to create classificationSemaphore.\n");
@@ -76,7 +76,7 @@ int main() {
 
 void HeatDetectionTask(void *pvParameters) {
 
-	while(1) {
+    while(1) {
 
 	printf("Heat Detection: Checking for objects...\n");
         vTaskDelay(pdMS_TO_TICKS(15)); //Heat detection delay
@@ -88,6 +88,7 @@ void HeatDetectionTask(void *pvParameters) {
 
 
 void GPSDetectionTask(void *pvParameters) {
+    
     while(1) {
 
         printf("GPS Detection: Checking satellite data...\n");
@@ -101,7 +102,7 @@ void GPSDetectionTask(void *pvParameters) {
 
 void ClassificationTask(void *pvParameters) {
 
-	char *event;
+    char *event;
 
     while(1) {
 
@@ -140,7 +141,7 @@ void PathDeterminationTask(void *pvParameters) {
 
 void InterceptionTask(void *pvParameters) {
 
-	while(1) {
+    while(1) {
 
         if (xSemaphoreTake(pathDeterminationSemaphore, portMAX_DELAY)) {
             printf("Interception: Launching interception object...\n");
