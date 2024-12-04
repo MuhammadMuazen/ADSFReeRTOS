@@ -45,7 +45,7 @@ SemaphoreHandle_t alerts_mutex;
 
 int main() {
 
-	srand(time(NULL));
+    srand(time(NULL));
 
     printf("[+] Initializing FreeRTOS tasks and resources...\n");
 
@@ -73,7 +73,7 @@ int main() {
 
 void HeatDetectionTask(void *pvParameters) {
 
-	printf("[+] Heat Detection: Checking for objects... \n");
+   printf("[+] Heat Detection: Checking for objects... \n");
 
     while(1) {
 
@@ -99,7 +99,7 @@ void HeatDetectionTask(void *pvParameters) {
 
 void GPSDetectionTask(void *pvParameters) {
     
-	printf("[+] GPS Detection: Checking satellite data...\n");
+    printf("[+] GPS Detection: Checking satellite data...\n");
 
     while(1) {
 
@@ -108,14 +108,14 @@ void GPSDetectionTask(void *pvParameters) {
 
     	if(gps_object_detected) {
 
-    		printf("[!] Object detected using GPS detector!\n");
+    	    printf("[!] Object detected using GPS detector!\n");
 
             xSemaphoreTake(task_creation_mutex, portMAX_DELAY);
             xTaskCreate(ClassificationTask, "Classification", 4096, NULL, CLASSIFICATION_PRIORITY, NULL);
             xSemaphoreGive(task_creation_mutex);
 
     	} else {
-    		printf("[-] GPS detection could not detect any object...\n");
+    	     printf("[-] GPS detection could not detect any object...\n");
     	}
 
         vTaskDelay(GPS_DETECTION_DELAY);
@@ -136,7 +136,7 @@ void ClassificationTask(void *pvParameters) {
 
 			printf("[!] Object is enenmy!\n");
 
-    	    xTaskCreate(PathDeterminationTask, "Path Determination", 4096, NULL, PATH_DETERMINATION_PRIORITY, NULL);
+    	    		xTaskCreate(PathDeterminationTask, "Path Determination", 4096, NULL, PATH_DETERMINATION_PRIORITY, NULL);
 
 		} else {
 			printf("[-] Detected object is not an enemy!");
@@ -161,7 +161,7 @@ void PathDeterminationTask(void *pvParameters) {
 
 			xSemaphoreTake(task_creation_mutex, portMAX_DELAY);
 			xTaskCreate(LaunchingDefensiveObject, "LauncingDefensiveObject", 4096, NULL, LAUNCHING_DEFENSIVE_OBJECT_PRIORITY, NULL);
-            xSemaphoreGive(task_creation_mutex);
+            		xSemaphoreGive(task_creation_mutex);
 		}
 
 		vTaskDelay(PATH_DETEREMNATION_DELAY);
@@ -208,14 +208,14 @@ void ConnectingWithDefensiveObject(void* pvParameters) {
 			
 			xSemaphoreTake(task_creation_mutex, portMAX_DELAY);
 			xTaskCreate(LaunchingDefensiveObject, "LauncingDefensiveObject", 4096, NULL, LAUNCHING_DEFENSIVE_OBJECT_PRIORITY, NULL);
-            xSemaphoreGive(task_creation_mutex);
+            		xSemaphoreGive(task_creation_mutex);
 
 		} else {
-            printf("[+] Interception succeeded!\n");
+            		printf("[+] Interception succeeded!\n");
             
 			xSemaphoreTake(alerts_mutex, portMAX_DELAY);
-            alerts_on = 0;
-            xSemaphoreGive(alerts_mutex);
+            		alerts_on = 0;
+           		xSemaphoreGive(alerts_mutex);
 		}
 
 		vTaskDelay(CONNECT_WITH_THE_DEFENSIVE_OBJECT_DELAY);
