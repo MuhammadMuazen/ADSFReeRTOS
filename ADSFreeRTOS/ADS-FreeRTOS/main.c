@@ -3,67 +3,49 @@
 #include "queue.h"
 #include "semphr.h"
 #include "timers.h"
+#include <time.h>
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <stdlib.h>
 
 //Task Priorities
-#define HEAT_TASK_PRIORITY 3
-#define GPS_TASK_PRIORITY 2
-#define CLASSIFICATION_PRIORITY 2
-#define PATH_DETERMINATION_PRIORITY 1
-#define INTERCEPTION_PRIORITY 1
-#define ILDE_PRIORITY 0
+#define HEAT_TASK_PRIORITY 3 // T1
+#define GPS_TASK_PRIORITY 3  // T2
+#define CLASSIFICATION_PRIORITY 1 // T3
+#define PATH_DETERMINATION_PRIORITY 1 // T4
+#define LAUNCHING_DEFENSIVE_OBJECT_PRIORITY 3 // T5
+#define CONNECTING_WITH_DEFENSIVE_OBJECT_PRIORITY 2 // T6
+#define STARTING_ALERTS_PRIORITY 0 // T7
 
-//Queues & Semaphores
-QueueHandle_t detectionQueue;
-SemaphoreHandle_t classificationSemaphore;
-SemaphoreHandle_t pathDeterminationSemaphore;
-SemaphoreHandle_t interceptionSemaphore;
+// Task Delays
+#define HEAT_DETECTION_DELAY pdMS_TO_TICKS(15)
+#define GPS_DETECTION_DELAY pdMS_TO_TICKS(10000)
+#define CLASSIFICATION_DELAY pdMS_TO_TICKS(5000)
+#define PATH_DETEREMNATION_DELAY pdMS_TO_TICKS(5000)
+#define LAUNCHING_DEFENSE_OBJECT_DELAY pdMS_TO_TICKS(5000)
+#define CONNECT_WITH_THE_DEFENSIVE_OBJECT_DELAY pdMS_TO_TICKS(1000)
+#define STARTING_ALERTS_DELAY pdMS_TO_TICKS(2000)
 
+// Tasks functions prototypes
 void HeatDetectionTask(void *pvParameters);
 void GPSDetectionTask(void *pvParameters);
 void ClassificationTask(void *pvParameters);
 void PathDeterminationTask(void *pvParameters);
-void InterceptionTask(void *pvParameters);
+void LaunchingDefensiveObject(void *pvParameters);
+void ConnectingWithDefensiveObject(void* pvParameters);
+void StartingAlerts(void *pvParameters);
+
 
 int main() {
 
+	srand(time(NULL));
+
     printf("Initializing FreeRTOS tasks and resources...\n");
 
-    //Create the queue for detection events
-    detectionQueue = xQueueCreate(5, sizeof(char*));
-
-    if (detectionQueue == NULL) {
-        printf("Error: Failed to create detectionQueue.\n");
-        return -1;
-    }
-
-    //Create semaphores
-    classificationSemaphore = xSemaphoreCreateBinary();
-    if (classificationSemaphore == NULL) {
-        printf("Error: Failed to create classificationSemaphore.\n");
-        return -1;
-    }
-
-    pathDeterminationSemaphore = xSemaphoreCreateBinary();
-    if (pathDeterminationSemaphore == NULL) {
-        printf("Error: Failed to create pathDeterminationSemaphore.\n");
-        return -1;
-    }
-
-    interceptionSemaphore = xSemaphoreCreateBinary();
-    if (interceptionSemaphore == NULL) {
-	printf("Error: Failed to create interceptionSemaphore.\n");
-	return -1;
-    }
-
-    //Create tasks
-    xTaskCreate(HeatDetectionTask, "Heat Detection", 4096, NULL, HEAT_TASK_PRIORITY, NULL);
-    xTaskCreate(GPSDetectionTask, "GPS Detection", 4096, NULL, GPS_TASK_PRIORITY, NULL);
-    xTaskCreate(ClassificationTask, "Classification", 4096, NULL, CLASSIFICATION_PRIORITY, NULL);
-    xTaskCreate(PathDeterminationTask, "Path Determination", 4096, NULL, PATH_DETERMINATION_PRIORITY, NULL);
-    xTaskCreate(InterceptionTask, "Interception", 4096, NULL, INTERCEPTION_PRIORITY, NULL);
+    //Heat and GPS tasks creation
+    xTaskCreate(HeatDetectionTask, "Heat Detection", 2048, NULL, HEAT_TASK_PRIORITY, NULL);
+    xTaskCreate(GPSDetectionTask, "GPS Detection", 2048, NULL, GPS_TASK_PRIORITY, NULL);
 
     printf("Starting scheduler...\n");
     vTaskStartScheduler();
@@ -76,88 +58,151 @@ int main() {
 
 void HeatDetectionTask(void *pvParameters) {
 
+	printf("Heat Detection: Checking for objects... \n");
+
     while(1) {
 
-	printf("Heat Detection: Checking for objects... \n");
-        vTaskDelay(pdMS_TO_TICKS(15)); //Heat detection delay
+    	// If this value is 1 it means that there is an object detected (Dump implementation BTW)
+    	int heat_object_detected = rand() % 2;
 
-        char *event = "HeatDetection";
-        xQueueSend(detectionQueue, &event, portMAX_DELAY); //Send detection event to the queue
+    	if(heat_object_detected) {
+
+    		printf("[!] Object detected using heat detector!\n");
+
+    	    xTaskCreate(ClassificationTask, "Classification", 2048, NULL, CLASSIFICATION_PRIORITY, NULL);
+
+    	} else {
+    		printf("[-] Heat detection did not catch any object...\n");
+    	}
+
+        vTaskDelay(HEAT_DETECTION_DELAY);
     }
 }
 
 
 void GPSDetectionTask(void *pvParameters) {
     
+	printf("[!] GPS Detection: Checking satellite data...\n");
+
     while(1) {
 
-        printf("GPS Detection: Checking satellite data...\n");
-        vTaskDelay(pdMS_TO_TICKS(10000)); //GPS detection delay
+    	// If this value is 1 it means that there is an object detected
+    	int gps_object_detected = rand() % 2;
 
-        char *event = "GPSDetection";
-        xQueueSend(detectionQueue, &event, portMAX_DELAY);
+    	if(gps_object_detected) {
+
+    		printf("[!] Object detected using GPS detector!\n");
+
+    	    xTaskCreate(ClassificationTask, "Classification", 2048, NULL, CLASSIFICATION_PRIORITY, NULL);
+
+    	} else {
+    		printf("[-] GPS detection could not detect any object...\n");
+    	}
+
+        vTaskDelay(GPS_DETECTION_DELAY);
     }
 }
 
 
 void ClassificationTask(void *pvParameters) {
 
-    char *event;
+	printf("Classifying Object...\n");
 
-    while(1) {
+	while(1) {
 
-        if (xQueueReceive(detectionQueue, &event, portMAX_DELAY)) {
-            printf("Classification: Received event - %s\n", event);
+		// If this value is 1 it means the object we detected is enemey object
+		int is_enemy = rand() % 2;
 
-            vTaskDelay(pdMS_TO_TICKS(5000)); //Classification delay
+		if(is_enemy) {
 
-            if (strcmp(event, "HeatDetection") == 0 || strcmp(event, "GPSDetection") == 0) {
-                printf("Classification: Enemy detected. Proceeding to Path Determination.\n");
-                xSemaphoreGive(classificationSemaphore);
+			printf("[!] Object is enenmy!\n");
 
-            } else {
-                printf("Classification: No threat detected. Returning to idle.\n");
-            }
-        }
-    }
+    	    xTaskCreate(PathDeterminationTask, "Path Determination", 2048, NULL, PATH_DETERMINATION_PRIORITY, NULL);
+
+		} else {
+			printf("[-] Detected object is not an enemy!");
+		}
+
+		vTaskDelay(CLASSIFICATION_DELAY);
+	}
 }
 
 
 void PathDeterminationTask(void *pvParameters) {
 
-    while(1) {
+	printf("Detecting if the object worth intercepting...\n");
 
-        if (xSemaphoreTake(classificationSemaphore, portMAX_DELAY)) {
-            printf("Path Determination: Calculating interception path...\n");
-            vTaskDelay(pdMS_TO_TICKS(5000)); //Path determination delay
+	while(1) {
 
-            //Assume interception needed
-            printf("Path Determination: Interception needed. Proceeding to Interception.\n");
-            xSemaphoreGive(pathDeterminationSemaphore);
-        }
-    }
+		int need_interception = rand() % 2;
+
+		if(need_interception) {
+
+			printf("[!] Interception Needed!\n");
+
+			xTaskCreate(LaunchingDefensiveObject, "LauncingDefensiveObject", 2048, NULL, LAUNCHING_DEFENSIVE_OBJECT_PRIORITY, NULL);
+		}
+
+		vTaskDelay(PATH_DETEREMNATION_DELAY);
+	}
 }
 
 
-void InterceptionTask(void *pvParameters) {
+void LaunchingDefensiveObject(void *pvParameters) {
 
-    while(1) {
+	printf("[!] Launching the defensive object...\n");
 
-        if (xSemaphoreTake(pathDeterminationSemaphore, portMAX_DELAY)) {
-            printf("Interception: Launching interception object...\n");
-            vTaskDelay(pdMS_TO_TICKS(5000)); //Interception delay
+	while(1) {
 
-            printf("Interception: Communication with object...\n");
-            vTaskDelay(pdMS_TO_TICKS(1000)); //Communication delay
+		xTaskCreate(ConnectingWithDefensiveObject, "ConnectingWithDefensiveObject", 2048, NULL, CONNECTING_WITH_DEFENSIVE_OBJECT_PRIORITY, NULL);
 
-            //Simulate success/failure - Random value [0,1]
-            bool success = (rand() % 2) == 0;
+		vTaskDelay(LAUNCHING_DEFENSE_OBJECT_DELAY);
+	}
 
-            if (success) {
-                printf("Interception: Successful. Returning to idle.\n");
-            } else {
-                printf("Interception: Failed. Retrying...\n");
-            }
-        }
-    }
+}
+
+// Keep track of the alerts state
+int alerts_on = 0;
+
+void ConnectingWithDefensiveObject(void* pvParameters) {
+
+	printf("[!] Connecting with the defensive object...\n");
+
+	while(1) {
+
+		int intercept_failed = rand() % 2;
+
+ 		if(!alerts_on) {
+
+
+ 			printf("[!] Starting Alerts...\n");
+
+ 			xTaskCreate(StartingAlerts, "StartingAlerts", 2048, NULL, STARTING_ALERTS_PRIORITY, NULL);
+
+ 			alerts_on = 1;
+ 		}
+
+		if(intercept_failed) {
+
+			printf("[-] Intercept failed launching another defensive object...");
+			xTaskCreate(LaunchingDefensiveObject, "LauncingDefensiveObject", 2048, NULL, LAUNCHING_DEFENSIVE_OBJECT_PRIORITY, NULL);
+
+		} else {
+			printf("[+] Interception successeded!\n");
+			alerts_on = 0;
+		}
+
+		vTaskDelay(CONNECT_WITH_THE_DEFENSIVE_OBJECT_DELAY);
+	}
+}
+
+void StartingAlerts(void *pvParameters) {
+
+	while(1) {
+
+		printf("[+] Alerts are ON\n");
+
+		vTaskDelay(STARTING_ALERTS_DELAY);
+	}
+
 }
