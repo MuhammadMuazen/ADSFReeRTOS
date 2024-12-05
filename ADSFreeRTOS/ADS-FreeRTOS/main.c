@@ -36,16 +36,31 @@ void LaunchingDefensiveObject(void *pvParameters);
 void ConnectingWithDefensiveObject(void* pvParameters);
 void StartingAlerts(void *pvParameters);
 
+// Task creation mutex
+SemaphoreHandle_t task_creation_mutex;
+// Keep track of the alerts state
+int alerts_on = 0;
+SemaphoreHandle_t alerts_mutex;
+
 
 int main() {
 
 	srand(time(NULL));
 
-    printf("Initializing FreeRTOS tasks and resources...\n");
+    printf("[+] Initializing FreeRTOS tasks and resources...\n");
+
+	// Initialize mutexes
+    alerts_mutex = xSemaphoreCreateMutex();
+    task_creation_mutex = xSemaphoreCreateMutex();
+
+    if (alerts_mutex == NULL || task_creation_mutex == NULL) {
+        printf("[!] Error: Mutex creation failed.\n");
+        return -1;
+    }
 
     //Heat and GPS tasks creation
-    xTaskCreate(HeatDetectionTask, "Heat Detection", 2048, NULL, HEAT_TASK_PRIORITY, NULL);
-    xTaskCreate(GPSDetectionTask, "GPS Detection", 2048, NULL, GPS_TASK_PRIORITY, NULL);
+    xTaskCreate(HeatDetectionTask, "Heat Detection", 4096, NULL, HEAT_TASK_PRIORITY, NULL);
+    xTaskCreate(GPSDetectionTask, "GPS Detection", 4096, NULL, GPS_TASK_PRIORITY, NULL);
 
     printf("Starting scheduler...\n");
     vTaskStartScheduler();
@@ -58,7 +73,7 @@ int main() {
 
 void HeatDetectionTask(void *pvParameters) {
 
-	printf("Heat Detection: Checking for objects... \n");
+	printf("[+] Heat Detection: Checking for objects... \n");
 
     while(1) {
 
@@ -69,7 +84,9 @@ void HeatDetectionTask(void *pvParameters) {
 
     		printf("[!] Object detected using heat detector!\n");
 
-    	    xTaskCreate(ClassificationTask, "Classification", 2048, NULL, CLASSIFICATION_PRIORITY, NULL);
+            xSemaphoreTake(task_creation_mutex, portMAX_DELAY);
+            xTaskCreate(ClassificationTask, "Classification", 4096, NULL, CLASSIFICATION_PRIORITY, NULL);
+            xSemaphoreGive(task_creation_mutex);
 
     	} else {
     		printf("[-] Heat detection did not catch any object...\n");
@@ -82,7 +99,7 @@ void HeatDetectionTask(void *pvParameters) {
 
 void GPSDetectionTask(void *pvParameters) {
     
-	printf("[!] GPS Detection: Checking satellite data...\n");
+	printf("[+] GPS Detection: Checking satellite data...\n");
 
     while(1) {
 
@@ -93,7 +110,9 @@ void GPSDetectionTask(void *pvParameters) {
 
     		printf("[!] Object detected using GPS detector!\n");
 
-    	    xTaskCreate(ClassificationTask, "Classification", 2048, NULL, CLASSIFICATION_PRIORITY, NULL);
+            xSemaphoreTake(task_creation_mutex, portMAX_DELAY);
+            xTaskCreate(ClassificationTask, "Classification", 4096, NULL, CLASSIFICATION_PRIORITY, NULL);
+            xSemaphoreGive(task_creation_mutex);
 
     	} else {
     		printf("[-] GPS detection could not detect any object...\n");
@@ -106,7 +125,7 @@ void GPSDetectionTask(void *pvParameters) {
 
 void ClassificationTask(void *pvParameters) {
 
-	printf("Classifying Object...\n");
+	printf("[+] Classifying Object...\n");
 
 	while(1) {
 
@@ -117,7 +136,7 @@ void ClassificationTask(void *pvParameters) {
 
 			printf("[!] Object is enenmy!\n");
 
-    	    xTaskCreate(PathDeterminationTask, "Path Determination", 2048, NULL, PATH_DETERMINATION_PRIORITY, NULL);
+    	    xTaskCreate(PathDeterminationTask, "Path Determination", 4096, NULL, PATH_DETERMINATION_PRIORITY, NULL);
 
 		} else {
 			printf("[-] Detected object is not an enemy!");
@@ -130,7 +149,7 @@ void ClassificationTask(void *pvParameters) {
 
 void PathDeterminationTask(void *pvParameters) {
 
-	printf("Detecting if the object worth intercepting...\n");
+	printf("[+] Detecting if the object worth intercepting...\n");
 
 	while(1) {
 
@@ -140,7 +159,9 @@ void PathDeterminationTask(void *pvParameters) {
 
 			printf("[!] Interception Needed!\n");
 
-			xTaskCreate(LaunchingDefensiveObject, "LauncingDefensiveObject", 2048, NULL, LAUNCHING_DEFENSIVE_OBJECT_PRIORITY, NULL);
+			xSemaphoreTake(task_creation_mutex, portMAX_DELAY);
+			xTaskCreate(LaunchingDefensiveObject, "LauncingDefensiveObject", 4096, NULL, LAUNCHING_DEFENSIVE_OBJECT_PRIORITY, NULL);
+            xSemaphoreGive(task_creation_mutex);
 		}
 
 		vTaskDelay(PATH_DETEREMNATION_DELAY);
@@ -154,42 +175,47 @@ void LaunchingDefensiveObject(void *pvParameters) {
 
 	while(1) {
 
-		xTaskCreate(ConnectingWithDefensiveObject, "ConnectingWithDefensiveObject", 2048, NULL, CONNECTING_WITH_DEFENSIVE_OBJECT_PRIORITY, NULL);
+		xTaskCreate(ConnectingWithDefensiveObject, "ConnectingWithDefensiveObject", 4096, NULL, CONNECTING_WITH_DEFENSIVE_OBJECT_PRIORITY, NULL);
 
 		vTaskDelay(LAUNCHING_DEFENSE_OBJECT_DELAY);
 	}
 
 }
 
-// Keep track of the alerts state
-int alerts_on = 0;
-
 void ConnectingWithDefensiveObject(void* pvParameters) {
 
-	printf("[!] Connecting with the defensive object...\n");
+	printf("[+] Connecting with the defensive object...\n");
 
 	while(1) {
 
 		int intercept_failed = rand() % 2;
 
+		xSemaphoreTake(alerts_mutex, portMAX_DELAY);
  		if(!alerts_on) {
 
 
  			printf("[!] Starting Alerts...\n");
 
- 			xTaskCreate(StartingAlerts, "StartingAlerts", 2048, NULL, STARTING_ALERTS_PRIORITY, NULL);
+ 			xTaskCreate(StartingAlerts, "StartingAlerts", 4096, NULL, STARTING_ALERTS_PRIORITY, NULL);
 
  			alerts_on = 1;
  		}
+		xSemaphoreGive(alerts_mutex);
 
 		if(intercept_failed) {
 
 			printf("[-] Intercept failed launching another defensive object...");
-			xTaskCreate(LaunchingDefensiveObject, "LauncingDefensiveObject", 2048, NULL, LAUNCHING_DEFENSIVE_OBJECT_PRIORITY, NULL);
+			
+			xSemaphoreTake(task_creation_mutex, portMAX_DELAY);
+			xTaskCreate(LaunchingDefensiveObject, "LauncingDefensiveObject", 4096, NULL, LAUNCHING_DEFENSIVE_OBJECT_PRIORITY, NULL);
+            xSemaphoreGive(task_creation_mutex);
 
 		} else {
-			printf("[+] Interception successeded!\n");
-			alerts_on = 0;
+            printf("[+] Interception succeeded!\n");
+            
+			xSemaphoreTake(alerts_mutex, portMAX_DELAY);
+            alerts_on = 0;
+            xSemaphoreGive(alerts_mutex);
 		}
 
 		vTaskDelay(CONNECT_WITH_THE_DEFENSIVE_OBJECT_DELAY);
@@ -204,5 +230,4 @@ void StartingAlerts(void *pvParameters) {
 
 		vTaskDelay(STARTING_ALERTS_DELAY);
 	}
-
 }
