@@ -59,8 +59,8 @@ int main() {
     }
 
     //Heat and GPS tasks creation
-    xTaskCreate(HeatDetectionTask, "Heat Detection", 4096, NULL, HEAT_TASK_PRIORITY, NULL);
-    xTaskCreate(GPSDetectionTask, "GPS Detection", 4096, NULL, GPS_TASK_PRIORITY, NULL);
+    xTaskCreate(HeatDetectionTask, "HeatDetection", 4096, NULL, HEAT_TASK_PRIORITY, NULL);
+    xTaskCreate(GPSDetectionTask, "GPSDetection", 4096, NULL, GPS_TASK_PRIORITY, NULL);
 
     printf("Starting scheduler...\n");
     vTaskStartScheduler();
@@ -84,7 +84,13 @@ void HeatDetectionTask(void *pvParameters) {
 
     		printf("[!] Object detected using heat detector!\n");
 
-            xSemaphoreTake(task_creation_mutex, portMAX_DELAY);
+			/*
+				200 ms more for the mutex wait just to make sure everything is okay,
+				we don't want to fuck everything up after what we have done.
+				
+				which means we have now full_time_cycle = 27.105 + 0.200 = 27.305
+			*/
+            xSemaphoreTake(task_creation_mutex, pdMS_TO_TICKS(5200));
             xTaskCreate(ClassificationTask, "Classification", 4096, NULL, CLASSIFICATION_PRIORITY, NULL);
             xSemaphoreGive(task_creation_mutex);
 
@@ -110,7 +116,8 @@ void GPSDetectionTask(void *pvParameters) {
 
     	    printf("[!] Object detected using GPS detector!\n");
 
-            xSemaphoreTake(task_creation_mutex, portMAX_DELAY);
+			// full_time_cycle = 27.305 + 0.200 = 27.505
+            xSemaphoreTake(task_creation_mutex, pdMS_TO_TICKS(5200)); 
             xTaskCreate(ClassificationTask, "Classification", 4096, NULL, CLASSIFICATION_PRIORITY, NULL);
             xSemaphoreGive(task_creation_mutex);
 
@@ -136,7 +143,7 @@ void ClassificationTask(void *pvParameters) {
 
 			printf("[!] Object is enenmy!\n");
 
-    	    		xTaskCreate(PathDeterminationTask, "Path Determination", 4096, NULL, PATH_DETERMINATION_PRIORITY, NULL);
+    	    xTaskCreate(PathDeterminationTask, "Path Determination", 4096, NULL, PATH_DETERMINATION_PRIORITY, NULL);
 
 		} else {
 			printf("[-] Detected object is not an enemy!");
@@ -159,9 +166,10 @@ void PathDeterminationTask(void *pvParameters) {
 
 			printf("[!] Interception Needed!\n");
 
-			xSemaphoreTake(task_creation_mutex, portMAX_DELAY);
+			// full_time_cycle = 27.505 + 0.200 = 27.705
+			xSemaphoreTake(task_creation_mutex, pdMS_TO_TICKS(5200));
 			xTaskCreate(LaunchingDefensiveObject, "LauncingDefensiveObject", 4096, NULL, LAUNCHING_DEFENSIVE_OBJECT_PRIORITY, NULL);
-            		xSemaphoreGive(task_creation_mutex);
+            xSemaphoreGive(task_creation_mutex);
 		}
 
 		vTaskDelay(PATH_DETEREMNATION_DELAY);
@@ -206,16 +214,23 @@ void ConnectingWithDefensiveObject(void* pvParameters) {
 
 			printf("[-] Intercept failed launching another defensive object...");
 			
-			xSemaphoreTake(task_creation_mutex, portMAX_DELAY);
+			// full_time_cycle = 27.705 + 0.200 = 27.905
+			xSemaphoreTake(task_creation_mutex, pdMS_TO_TICKS(5200));
 			xTaskCreate(LaunchingDefensiveObject, "LauncingDefensiveObject", 4096, NULL, LAUNCHING_DEFENSIVE_OBJECT_PRIORITY, NULL);
-            		xSemaphoreGive(task_creation_mutex);
+            xSemaphoreGive(task_creation_mutex);
 
 		} else {
-            		printf("[+] Interception succeeded!\n");
             
-			xSemaphoreTake(alerts_mutex, portMAX_DELAY);
-            		alerts_on = 0;
-           		xSemaphoreGive(alerts_mutex);
+			printf("[+] Interception succeeded!\n");
+            
+			/*
+				full_time_cycle = 27.905 + 0.055 = 27.960
+				full_time_cycle < 30.000 sec this means we pass the limit 
+				{{ AT LEAST THIS IS WHAT I HOPE }}
+			*/ 
+			xSemaphoreTake(alerts_mutex, pdMS_TO_TICKS(55));
+            alerts_on = 0;
+            xSemaphoreGive(alerts_mutex);
 		}
 
 		vTaskDelay(CONNECT_WITH_THE_DEFENSIVE_OBJECT_DELAY);
